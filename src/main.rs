@@ -53,15 +53,21 @@ impl Deck {
     let mut salt = rng();
     self.cards.shuffle(&mut salt)
   }
+
+  fn deal(&mut self, num_cards: usize) -> Vec<String> {
+    return self.cards.split_off(self.cards.len() - num_cards);
+  }
 }
 
 fn main() {
   // let rng = rand::rng();
 
   let mut deck = Deck::new();
-
   deck.shuffle();
+
+  let hand = deck.deal(3);
 
   // println!("Here's your deck: {deck?}");
   println!("Here's your deck: {:#?}", deck);
+  println!("Here's your hand: {:#?}", hand);
 }
