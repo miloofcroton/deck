@@ -47,14 +47,16 @@ impl Deck {
     return Deck { cards };
   }
 
-  // fn shuffle(&self) {
+  fn shuffle(&self) {
 
-  // }
+  }
 }
 
 fn main() {
 
   let deck = Deck::new();
+
+  deck.shuffle();
 
   // println!("Here's your deck: {deck?}");
   println!("Here's your deck: {:#?}", deck);
