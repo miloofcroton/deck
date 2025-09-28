@@ -8,23 +8,23 @@ impl Deck {
     let suits = [
       "Spades",
       "Clubs",
-      "Hearts",
-      "Diamonds",
+      // "Hearts",
+      // "Diamonds",
     ];
     let values = [
       "Ace",
       "Two",
       "Three",
-      "Four",
-      "Five",
-      "Six",
-      "Seven",
-      "Eight",
-      "Nine",
-      "Ten",
-      "Jack",
-      "Queen",
-      "King",
+      // "Four",
+      // "Five",
+      // "Six",
+      // "Seven",
+      // "Eight",
+      // "Nine",
+      // "Ten",
+      // "Jack",
+      // "Queen",
+      // "King",
     ];
 
     let mut cards = vec![];
@@ -39,10 +39,17 @@ impl Deck {
     // let deck = Deck { cards: Vec::new() };
     // let deck = Deck { cards: vec![] };
     // let deck = Deck { cards: cards };
-    let deck = Deck { cards };
+    // let deck = Deck { cards };
+    // return deck;
 
-    return deck;
+    // Deck { cards }
+
+    return Deck { cards };
   }
+
+  // fn shuffle(&self) {
+
+  // }
 }
 
 fn main() {
